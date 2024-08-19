@@ -39,19 +39,23 @@
   - Power BI
 
 # Azure Synapse Analytics
-- **Azure Synapse Analytics**: Serviço de análise integrado que combina big data e análise de dados empresariais. Ele permite o processamento de consultas SQL e a execução de pipelines de dados em grande escala, fornecendo insights em tempo real.
+- **Azure Synapse Analytics**: Serviço nativo de análise do Azure criado no Spark  que combina big data e análise de dados empresariais. Ele permite o processamento de consultas SQL e a execução de pipelines de dados em grande escala, fornecendo insights em tempo real.
+
+- # Data Warehouse
+- **Data Warehouse**: É um sistema de armazenamento de dados projetado para análise e geração de relatórios. Ele integra dados de várias fontes, estruturados e semiestruturados, em um repositório centralizado, otimizado para consultas analíticas e relatórios históricos. Data Warehouses são amplamente usados em soluções de BI para suportar decisões empresariais informadas. O **Azure Synapse Analytics** é uma solução de data warehouse, que combina capacidades de processamento de big data e análise de dados empresariais.
 
 # Blobs
 - **Blobs**: São objetos de armazenamento no Azure Blob Storage usados para armazenar grandes quantidades de dados não estruturados, como imagens, vídeos, documentos e backups.
 
 # Instruções SQL
-- **Instruções SQL**: Conjunto de comandos usados para gerenciar e consultar bancos de dados relacionais. As principais instruções incluem:
-  - **SELECT**: Recupera dados de uma tabela.
-  - **INSERT**: Insere novos dados em uma tabela.
-  - **UPDATE**: Atualiza dados existentes em uma tabela.
-  - **DELETE**: Remove dados de uma tabela.
-
-
+- **Instruções SQL**: Conjunto de comandos usados para gerenciar e consultar bancos de dados relacionais.
+Algumas instruções:
+  - **SELECT - INTO** faz uma inserção
+em uma tabela.
+  - **SELECT - OVER** determina o particionamento e a ordenação do conjunto de linhas antes que uma função de janela seja aplicada
+  - **INSERT - VALUES** insere valores em uma única linha.
+  - **SELECT - HAVING** filtra dados.
+  - **MERGE**: permite combinar dados de duas tabelas com base em uma condição específica, realizando operações de inserção, atualização ou exclusão em uma única instrução.
 
 # Apache Gremlin
 - **Apache Gremlin**: Linguagem de consulta usada para trabalhar com bancos de dados de grafos. Ele permite consultas complexas em estruturas de dados de grafos, que são compostas de vértices e arestas.
