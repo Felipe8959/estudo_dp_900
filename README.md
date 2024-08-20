@@ -39,10 +39,10 @@
   - Power BI
 
 # Azure Synapse Analytics
-- **Azure Synapse Analytics**: Serviço nativo de análise do Azure criado no Spark  que combina big data e análise de dados empresariais. Ele permite o processamento de consultas SQL e a execução de pipelines de dados em grande escala, fornecendo insights em tempo real.
+- **Azure Synapse Analytics**: Serviço nativo de análise do Azure criado no Spark  que combina big data e análise de dados empresariais. Ele permite o processamento de consultas SQL e a execução de pipelines de dados em grande escala, fornecendo insights em tempo real. O Stream Analytics permite agregar dados de um período específico antes de serem gravados em um data lake.
 
-- # Data Warehouse
-- **Data Warehouse**: É um sistema de armazenamento de dados projetado para análise e geração de relatórios. Ele integra dados de várias fontes, estruturados e semiestruturados, em um repositório centralizado, otimizado para consultas analíticas e relatórios históricos. Data Warehouses são amplamente usados em soluções de BI para suportar decisões empresariais informadas. O **Azure Synapse Analytics** é uma solução de data warehouse, que combina capacidades de processamento de big data e análise de dados empresariais.
+# Data Warehouse
+- **Data Warehouse**: É um sistema de armazenamento de dados projetado para análise e geração de relatórios. Ele integra dados de várias fontes, estruturados e semiestruturados, otimizado para consultas analíticas e relatórios históricos. Data Warehouses são usados em soluções de BI para suportar decisões empresariais. O **Azure Synapse Analytics** é uma solução de data warehouse, que combina capacidades de processamento de big data e análise de dados empresariais. Os data warehouses usam tabelas de fatos e de dimensões em um esquema em estrela/floco de neve.
 
 # Blobs
 - **Blobs**: São objetos de armazenamento no Azure Blob Storage usados para armazenar grandes quantidades de dados não estruturados, como imagens, vídeos, documentos e backups.
@@ -86,3 +86,29 @@ em uma tabela.
 
 # Formato ORC
 - **Formato ORC (Optimized Row Columnar)**: Formato de arquivo altamente otimizado para armazenamento de dados em colunas, frequentemente utilizado em big data. Ele melhora a eficiência de leitura e escrita, economizando espaço e acelerando as consultas.
+
+# HDInsight
+- **Azure HDInsight**: serviço do Azure que oferece clusters de big data de código aberto baseados em frameworks populares como Apache Hadoop, Spark, Hive, Kafka, HBase, entre outros. O HDInsight permite processar grandes volumes de dados, realizar análises em tempo real, e executar pipelines de machine learning e ETL em ambientes escaláveis.
+
+# Stream Analytics
+O **Stream Analytics** pode lidar com o processamento de fluxo do Kafka para o Data Lake.
+
+# Fontes para processamento de fluxo
+Os serviços a seguir são comumente usados para ingerir dados para processamento de fluxo no Azure:
+
+- **Hubs de Eventos do Azure**: um serviço de ingestão de dados que você pode usar para gerenciar filas de dados de eventos, garantindo que cada evento seja processado em ordem, exatamente uma vez.
+- **Hub IoT do Azure**: um serviço de ingestão de dados semelhante aos Hubs de Eventos do Azure, mas otimizado para gerenciar dados de eventos de dispositivos da Internet das Coisas (IoT).
+- **Azure Data Lake Store Gen 2**: um serviço de armazenamento altamente escalonável que é frequentemente usado em cenários de processamento em lotes, mas que também pode ser usado como fonte de dados de streaming.
+- **Apache Kafka**: uma solução de ingestão de dados de código aberto que é comumente usada em conjunto com o Apache Spark. Você pode usar o Azure HDInsight para criar um cluster Kafka.
+
+# Drill Up e Drill Down
+- Uma hierarquia permite fazer drill up e fazer drill down em uma dimensão. 
+- **Drill Down**: 
+  - **Definição**: Processo de aprofundar a análise dos dados, movendo-se de um nível de agregação para níveis mais detalhados.
+  - **Exemplo**: Ao visualizar as vendas anuais de uma empresa, o drill down permite que você veja as vendas por trimestre, mês, semana ou até mesmo por dia.
+  - **Uso**: Utilizado para explorar causas subjacentes, identificar padrões específicos e obter insights mais detalhados sobre os dados.
+
+- **Drill Up**:
+  - **Definição**: Processo oposto ao drill down, movendo-se de um nível de detalhe para um nível mais agregado.
+  - **Exemplo**: Se você estiver visualizando as vendas mensais, o drill up pode resumir essas informações para o nível trimestral ou anual.
+  - **Uso**: Utilizado para obter uma visão geral dos dados, resumir informações detalhadas e entender tendências em um nível mais amplo.
