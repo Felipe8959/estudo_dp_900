@@ -38,6 +38,9 @@
   - Azure Synapse Analytics
   - Power BI
 
+# Armazenamento de chave/valor
+Um armazenamento de chave/valor é usado para pesquisas simples baseadas em uma chave única para obter um valor único.  permite armazenar dados em um formato de duas colunas sem exigir um sistema de gerenciamento de dados complexo
+
 # Azure Synapse Analytics
 - **Azure Synapse Analytics**: Serviço nativo de análise do Azure criado no Spark  que combina big data e análise de dados empresariais. Ele permite o processamento de consultas SQL e a execução de pipelines de dados em grande escala, fornecendo insights em tempo real. O Stream Analytics permite agregar dados de um período específico antes de serem gravados em um data lake.
 
@@ -100,6 +103,9 @@ Os serviços a seguir são comumente usados para ingerir dados para processament
 - **Hub IoT do Azure**: um serviço de ingestão de dados semelhante aos Hubs de Eventos do Azure, mas otimizado para gerenciar dados de eventos de dispositivos da Internet das Coisas (IoT).
 - **Azure Data Lake Store Gen 2**: um serviço de armazenamento altamente escalonável que é frequentemente usado em cenários de processamento em lotes, mas que também pode ser usado como fonte de dados de streaming.
 - **Apache Kafka**: uma solução de ingestão de dados de código aberto que é comumente usada em conjunto com o Apache Spark. Você pode usar o Azure HDInsight para criar um cluster Kafka.
+
+# Dimensões
+As dimensões são usadas para agregar dados. Entidades que serão usadas para fazer a agregação.
 
 # Drill Up e Drill Down
 - Uma hierarquia permite fazer drill up e fazer drill down em uma dimensão. 
