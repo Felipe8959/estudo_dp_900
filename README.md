@@ -39,7 +39,10 @@
   - Power BI
 
 # Armazenamento de chave/valor
-Um armazenamento de chave/valor é usado para pesquisas simples baseadas em uma chave única para obter um valor único.  permite armazenar dados em um formato de duas colunas sem exigir um sistema de gerenciamento de dados complexo
+Um armazenamento de chave/valor é usado para pesquisas simples baseadas em uma chave única para obter um valor único.  permite armazenar dados em um formato de duas colunas sem exigir um sistema de gerenciamento de dados complexo. O armazenamento de tabelas é usado para armazenar pares de chave/valor em partições. [Ver mais](https://learn.microsoft.com/pt-br/training/modules/explore-provision-deploy-non-relational-data-services-azure/5-azure-tables)
+
+# Índice
+A criação de um índice permite que você pesquise dados em uma tabela com mais eficiência. Em uma tabela que contém poucas linhas, o uso do índice provavelmente não será mais eficiente do que simplesmente ler a tabela inteira e localizar as linhas solicitadas pela consulta (nesse caso, o otimizador de consulta ignorará o índice). No entanto, quando uma tabela tem muitas linhas, os índices podem melhorar drasticamente o desempenho das consultas.
 
 # Azure Synapse Analytics
 - **Azure Synapse Analytics**: Serviço nativo de análise do Azure criado no Spark  que combina big data e análise de dados empresariais. Ele permite o processamento de consultas SQL e a execução de pipelines de dados em grande escala, fornecendo insights em tempo real. O Stream Analytics permite agregar dados de um período específico antes de serem gravados em um data lake.
@@ -48,7 +51,7 @@ Um armazenamento de chave/valor é usado para pesquisas simples baseadas em uma 
 - **Data Warehouse**: É um sistema de armazenamento de dados projetado para análise e geração de relatórios. Ele integra dados de várias fontes, estruturados e semiestruturados, otimizado para consultas analíticas e relatórios históricos. Data Warehouses são usados em soluções de BI para suportar decisões empresariais. O **Azure Synapse Analytics** é uma solução de data warehouse, que combina capacidades de processamento de big data e análise de dados empresariais. Os data warehouses usam tabelas de fatos e de dimensões em um esquema em estrela/floco de neve.
 
 # Blobs
-- **Blobs**: São objetos de armazenamento no Azure Blob Storage usados para armazenar grandes quantidades de dados não estruturados, como imagens, vídeos, documentos e backups. [Ver mais](https://learn.microsoft.com/pt-br/training/modules/explore-provision-deploy-non-relational-data-services-azure/2-azure-blob-storage)
+- **Blobs**: São objetos de armazenamento no Azure Blob Storage usados para armazenar grandes quantidades de dados não estruturados, como imagens, vídeos, documentos e backups. Os blobs de páginas são otimizados para acesso aleatório e usados para VHDs [Ver mais](https://learn.microsoft.com/pt-br/training/modules/explore-provision-deploy-non-relational-data-services-azure/2-azure-blob-storage)
 
 # Instruções SQL
 - **Instruções SQL**: Conjunto de comandos usados para gerenciar e consultar bancos de dados relacionais.
@@ -64,25 +67,28 @@ em uma tabela.
 - **Apache Gremlin**: Linguagem de consulta usada para trabalhar com bancos de dados de grafos. Ele permite consultas complexas em estruturas de dados de grafos, que são compostas de vértices e arestas.
 
 # Apache Cassandra
-- **Apache Cassandra**: Banco de dados NoSQL altamente escalável e distribuído, projetado para lidar com grandes volumes de dados em múltiplos servidores, sem pontos de falha.
+- **Apache Cassandra**: Banco de dados NoSQL altamente escalável e distribuído, projetado para lidar com grandes volumes de dados em múltiplos servidores, sem pontos de falha. A API do Cassandra é consultada usando SQL. 
 
 # CosmosDB
 - **Azure Cosmos DB**: Banco de dados NoSQL distribuído globalmente que oferece suporte a vários modelos de dados (chave-valor, documento, gráfico, etc.). Ele é conhecido por sua baixa latência e alta disponibilidade.
 
 # MongoDB
-- **MongoDB**: Banco de dados NoSQL baseado em documentos. Ele armazena dados em formato JSON-like, proporcionando flexibilidade na modelagem de dados.
+- **MongoDB**: Banco de dados NoSQL baseado em documentos. Ele armazena dados em formato JSON-like, proporcionando flexibilidade na modelagem de dados. A API do MongoDB também armazena dados no formato BSON.
 
 # Azure Data Lake
-- **Azure Data Lake**: Serviço de armazenamento escalável e seguro no Azure, otimizado para grandes volumes de dados. Ele é projetado para processar dados de qualquer tipo e tamanho para análise e processamento em grande escala.
+- **Azure Data Lake**: Serviço de armazenamento escalável e seguro no Azure, otimizado para grandes volumes de dados. Ele é projetado para processar dados de qualquer tipo e tamanho para análise e processamento em grande escala. O Data Lake Storage Gen2 é usado para armazenar grandes quantidades de dados a serem processados por serviços como o Databricks, o Azure Synapse Analytics e o HDInsight. [Ver mais](https://learn.microsoft.com/pt-br/training/modules/explore-provision-deploy-non-relational-data-services-azure/3-azure-data-lake-gen2)
 
 # Instância Gerenciada de SQL
-- **Instância Gerenciada de SQL**: Serviço do Azure que oferece uma instância completa de SQL Server na nuvem. Ele oferece compatibilidade total com o SQL Server e é adequado para migrações de ambientes locais para a nuvem.
+- **Instância Gerenciada de SQL**: é um serviço de plataforma como serviço (PaaS) que oferece uma instância completa de SQL Server na nuvem. Ele oferece compatibilidade total com o SQL Server 2016 e é adequado para migrações de ambientes locais para a nuvem. Permite que você migre um servidor do SQL inteiro para a nuvem sem a necessidade de gerenciar a infraestrutura depois da migração. 
 
 # SQL Server em Máquinas Virtuais do Azure que executam o Windows
 - **SQL Server em VMs do Azure**: Oferece a execução do SQL Server em máquinas virtuais no Azure, permitindo que os clientes tenham controle total sobre o ambiente do SQL Server, com flexibilidade de configuração e personalização.
 
+# SQL no Edge
+É otimizado para cenários de IoT que devem funcionar com o fluxo de dados de série temporal.
+
 # Banco de Dados SQL do Azure
-- **Banco de Dados SQL do Azure**: Serviço de banco de dados relacional totalmente gerenciado que oferece alta disponibilidade, escalabilidade automática e backups automatizados. Ele é baseado no mecanismo do Microsoft SQL Server.
+- **Banco de Dados SQL do Azure**: Serviço de banco de dados relacional totalmente gerenciado que oferece alta disponibilidade, escalabilidade automática e backups automatizados. Ele é baseado no mecanismo do Microsoft SQL Server. O Banco de Dados SQL do Azure é uma instância de SQL de PaaS sem servidor. Permite provisionar um banco de dados individual em um servidor dedicado e tem escalabilidade sob demanda. 
 
 # Bancos de Dados OLAP
 - **Bancos de Dados OLAP (Online Analytical Processing)**: São projetados para consultas complexas e análises multidimensionais, ideais para cenários de business intelligence (BI). Eles permitem a agregação de grandes volumes de dados e fornecem uma visão consolidada para tomada de decisão.
@@ -107,7 +113,7 @@ Os serviços a seguir são comumente usados para ingerir dados para processament
 # Dimensões
 As dimensões são usadas para agregar dados. Entidades que serão usadas para fazer a agregação.
 
-# Drill Up e Drill Down
+# O que é Drill Up e Drill Down?
 - Uma hierarquia permite fazer drill up e fazer drill down em uma dimensão. 
 - **Drill Down**: 
   - **Definição**: Processo de aprofundar a análise dos dados, movendo-se de um nível de agregação para níveis mais detalhados.
@@ -118,3 +124,6 @@ As dimensões são usadas para agregar dados. Entidades que serão usadas para f
   - **Definição**: Processo oposto ao drill down, movendo-se de um nível de detalhe para um nível mais agregado.
   - **Exemplo**: Se você estiver visualizando as vendas mensais, o drill up pode resumir essas informações para o nível trimestral ou anual.
   - **Uso**: Utilizado para obter uma visão geral dos dados, resumir informações detalhadas e entender tendências em um nível mais amplo.
+ 
+# O que é um pipeline?
+Sequência automatizada de etapas ou processos que são executados em ordem para alcançar um objetivo específico, como a construção, teste, e entrega de software. É uma maneira de automatizar tarefas repetitivas e garantir que cada etapa seja executada de forma consistente e eficiente.
