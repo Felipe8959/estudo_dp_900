@@ -8,8 +8,6 @@
 - **Bancos de Dados NoSQL**: Flexíveis em estrutura, usados para dados distribuídos e de grande escala. Ex.: MongoDB, Cassandra.
 
 # Modelos de Dados
-- **Normalização**: Processo de organizar os dados para reduzir a redundância e dependência, dividindo-os em várias tabelas relacionadas.
-- **Desnormalização**: Combinação de dados normalizados para melhorar o desempenho de leitura, mesmo que isso aumente a redundância.
 
 ## Conceitos de Dados Relacionais
 - **Conceitos**: Bancos de dados relacionais são organizados em tabelas que representam entidades. As relações entre tabelas são feitas através de chaves primárias (únicas para cada registro) e chaves estrangeiras (que referenciam chaves primárias em outras tabelas).
@@ -145,8 +143,9 @@ As dimensões são usadas para agregar dados. Entidades que serão usadas para f
 # O que é um pipeline?
 Sequência automatizada de etapas ou processos que são executados em ordem para alcançar um objetivo específico, como a construção, teste, e entrega de software. É uma maneira de automatizar tarefas repetitivas e garantir que cada etapa seja executada de forma consistente e eficiente. [Ver mais](https://learn.microsoft.com/pt-br/training/modules/examine-components-of-modern-data-warehouse/3-data-ingestion-pipelines)
 
-# O que é Normalização?
-A normalização é um processo para reduzir a duplicação de dados. Isso pode ser feito separando entidades em suas próprias tabelas e estabelecendo relações entre as tabelas. [Ver mais](https://learn.microsoft.com/pt-br/training/modules/explore-relational-data-offerings/3-normalization)
+# O que é Normalização e Desnormalização?
+- **Normalização**: É um processo para reduzir a duplicação de dados. Isso pode ser feito separando entidades em suas próprias tabelas e estabelecendo relações entre as tabelas.
+- **Desnormalização**: Combinação de dados normalizados para melhorar o desempenho de leitura, mesmo que isso aumente a redundância.[Ver mais](https://learn.microsoft.com/pt-br/training/modules/explore-relational-data-offerings/3-normalization)
 
 # Administradores de Banco de Dados
 Gerenciam bancos de dados, atribuindo permissões aos usuários, armazenando cópias de backup de dados e restaurando dados em caso de falhas.
