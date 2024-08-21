@@ -144,8 +144,8 @@ As dimensões são usadas para agregar dados. Entidades que serão usadas para f
 Sequência automatizada de etapas ou processos que são executados em ordem para alcançar um objetivo específico, como a construção, teste, e entrega de software. É uma maneira de automatizar tarefas repetitivas e garantir que cada etapa seja executada de forma consistente e eficiente. [Ver mais](https://learn.microsoft.com/pt-br/training/modules/examine-components-of-modern-data-warehouse/3-data-ingestion-pipelines)
 
 # O que é Normalização e Desnormalização?
-- **Normalização**: É um processo para reduzir a duplicação de dados. Isso pode ser feito separando entidades em suas próprias tabelas e estabelecendo relações entre as tabelas.
-- **Desnormalização**: Combinação de dados normalizados para melhorar o desempenho de leitura, mesmo que isso aumente a redundância.[Ver mais](https://learn.microsoft.com/pt-br/training/modules/explore-relational-data-offerings/3-normalization)
+- **Normalização**: É um processo para reduzir a duplicação de dados. Isso pode ser feito separando entidades em suas próprias tabelas e estabelecendo relações entre as tabelas.[Ver mais](https://learn.microsoft.com/pt-br/training/modules/explore-relational-data-offerings/3-normalization)
+- **Desnormalização**: Combinação de dados normalizados para melhorar o desempenho de leitura, mesmo que isso aumente a redundância.
 
 # Administradores de Banco de Dados
 Gerenciam bancos de dados, atribuindo permissões aos usuários, armazenando cópias de backup de dados e restaurando dados em caso de falhas.
