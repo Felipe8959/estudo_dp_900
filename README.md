@@ -36,13 +36,17 @@
   - Azure Synapse Analytics
   - Power BI
 
-# Dados transacionais
+## Dados transacionais
 Um sistema transacional registra transações que encapsulam eventos específicos que a organização deseja controlar. Uma transação pode ser financeira, como a movimentação de dinheiro entre contas em um sistema bancário, ou pode fazer parte de um sistema de varejo, controlando pagamentos de bens e serviços de clientes. Pense na transação como uma unidade de trabalho pequena e discreta.
 Os bancos de dados transacionais são altamente normalizados e são otimizados para operações CRUD.
 
-# Dados analíticos
+## Dados analíticos
 O processamento de dados analíticos normalmente usa sistemas somente leitura (ou read-mostly) que armazenam grandes volumes de dados históricos ou métricas de negócios.
 As cargas de trabalho de dados analíticos são altamente desnormalizadas e otimizadas para operações de leitura.
+
+# Delta Lake
+O Delta Lake é uma camada de armazenamento de código aberto que adiciona suporte ao Data Lake Storage para consistência transacional.
+É um serviço de análise e banco de dados de alto desempenho otimizado para ingestão e consulta de dados em lote ou streaming com um elemento de série temporal e que pode ser usado como um serviço autônomo do Azure ou como um tempo de execução do Azure Synapse Data Explorer em um espaço de trabalho do Azure Synapse Analytics.
 
 # OLTP
 O trabalho executado por sistemas transacionais é geralmente conhecido como OLTP (Processamento de Transações Online).
