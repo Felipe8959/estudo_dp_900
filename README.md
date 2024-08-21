@@ -77,38 +77,38 @@ em uma tabela.
   - **MERGE**: permite combinar dados de duas tabelas com base em uma condição específica, realizando operações de inserção, atualização ou exclusão em uma única instrução.
 
 # Apache Gremlin
-- **Apache Gremlin**: Linguagem de consulta usada para trabalhar com bancos de dados de grafos. Ele permite consultas complexas em estruturas de dados de grafos, que são compostas de vértices e arestas.
+Linguagem de consulta usada para trabalhar com bancos de dados de grafos. Ele permite consultas complexas em estruturas de dados de grafos, que são compostas de vértices e arestas.
 O Gremlin é usado para dados em um grafo. As entidades são definidas como vértices que formam nós. Os nós são conectados por bordas que representam relações.
 
 # Apache Cassandra
-- **Apache Cassandra**: Banco de dados NoSQL altamente escalável e distribuído, projetado para lidar com grandes volumes de dados em múltiplos servidores, sem pontos de falha. A API do Cassandra é consultada usando SQL. 
+Banco de dados NoSQL altamente escalável e distribuído, projetado para lidar com grandes volumes de dados em múltiplos servidores, sem pontos de falha. A API do Cassandra é consultada usando SQL. 
 
 # CosmosDB
-- **Azure Cosmos DB**: Banco de dados NoSQL distribuído globalmente que oferece suporte a vários modelos de dados (chave-valor, documento, gráfico, etc.). Ele é conhecido por sua baixa latência e alta disponibilidade.
+Banco de dados NoSQL distribuído globalmente que oferece suporte a vários modelos de dados (chave-valor, documento, gráfico, etc.). Ele é conhecido por sua baixa latência e alta disponibilidade.
 
 # MongoDB
-- **MongoDB**: Banco de dados NoSQL baseado em documentos. Ele armazena dados em formato JSON-like, proporcionando flexibilidade na modelagem de dados. A API do MongoDB também armazena dados no formato BSON.
+Banco de dados NoSQL baseado em documentos. Ele armazena dados em formato JSON-like, proporcionando flexibilidade na modelagem de dados. A API do MongoDB também armazena dados no formato BSON.
 
 # PostgreSQL
 O PostgreSQL é um banco de dados de objetos híbrido e relacional. Você pode armazenar dados em tabelas relacionais ou armazenar tipos de dados personalizados com propriedades não relacionais.
 
 # Azure Data Lake
-- **Azure Data Lake**: Serviço de armazenamento escalável e seguro no Azure, otimizado para grandes volumes de dados. Ele é projetado para processar dados de qualquer tipo e tamanho para análise e processamento em grande escala. O Data Lake Storage Gen2 é usado para armazenar grandes quantidades de dados a serem processados por serviços como o Databricks, o Azure Synapse Analytics e o HDInsight. [Ver mais](https://learn.microsoft.com/pt-br/training/modules/explore-provision-deploy-non-relational-data-services-azure/3-azure-data-lake-gen2)
+Serviço de armazenamento escalável e seguro no Azure, otimizado para grandes volumes de dados. Ele é projetado para processar dados de qualquer tipo e tamanho para análise e processamento em grande escala. O Data Lake Storage Gen2 é usado para armazenar grandes quantidades de dados a serem processados por serviços como o Databricks, o Azure Synapse Analytics e o HDInsight. [Ver mais](https://learn.microsoft.com/pt-br/training/modules/explore-provision-deploy-non-relational-data-services-azure/3-azure-data-lake-gen2)
 
 # Azure Data Explorer
 O Data Explorer é usado para a análise de grandes quantidades de dados de log de texto, sites e dispositivos IoT e usa uma linguagem de consulta comum. É um serviço de análise e banco de dados de alto desempenho otimizado para ingestão e consulta de dados em lote ou streaming com um elemento de série temporal e que pode ser usado como um serviço autônomo do Azure ou como um tempo de execução do Azure Synapse Data Explorer em um espaço de trabalho do Azure Synapse Analytics.
 
 # Instância Gerenciada de SQL
-- **Instância Gerenciada de SQL**: é um serviço de plataforma como serviço (PaaS) que oferece uma instância completa de SQL Server na nuvem. Ele oferece compatibilidade total com o SQL Server 2016 e é adequado para migrações de ambientes locais para a nuvem. Permite que você migre um servidor do SQL inteiro para a nuvem sem a necessidade de gerenciar a infraestrutura depois da migração. 
+É um serviço de plataforma como serviço (PaaS) que oferece uma instância completa de SQL Server na nuvem. Ele oferece compatibilidade total com o SQL Server 2016 e é adequado para migrações de ambientes locais para a nuvem. Permite que você migre um servidor do SQL inteiro para a nuvem sem a necessidade de gerenciar a infraestrutura depois da migração. 
 
 # SQL Server em Máquinas Virtuais do Azure que executam o Windows
-- **SQL Server em VMs do Azure**: Oferece a execução do SQL Server em máquinas virtuais no Azure, permitindo que os clientes tenham controle total sobre o ambiente do SQL Server, com flexibilidade de configuração e personalização.
+Oferece a execução do SQL Server em máquinas virtuais no Azure, permitindo que os clientes tenham controle total sobre o ambiente do SQL Server, com flexibilidade de configuração e personalização.
 
 # SQL no Edge
 É otimizado para cenários de IoT que devem funcionar com o fluxo de dados de série temporal.
 
 # Banco de Dados SQL do Azure
-- **Banco de Dados SQL do Azure**: Serviço de banco de dados relacional totalmente gerenciado que oferece alta disponibilidade, escalabilidade automática e backups automatizados. Ele é baseado no mecanismo do Microsoft SQL Server. O Banco de Dados SQL do Azure é uma instância de SQL de PaaS sem servidor. Permite provisionar um banco de dados individual em um servidor dedicado e tem escalabilidade sob demanda. 
+Serviço de banco de dados relacional totalmente gerenciado que oferece alta disponibilidade, escalabilidade automática e backups automatizados. Ele é baseado no mecanismo do Microsoft SQL Server. O Banco de Dados SQL do Azure é uma instância de SQL de PaaS sem servidor. Permite provisionar um banco de dados individual em um servidor dedicado e tem escalabilidade sob demanda. 
 
 # Bancos de Dados OLAP
 - **Bancos de Dados OLAP (Online Analytical Processing)**: São projetados para consultas complexas e análises multidimensionais, ideais para cenários de business intelligence (BI). Eles permitem a agregação de grandes volumes de dados e fornecem uma visão consolidada para tomada de decisão.
@@ -117,7 +117,7 @@ O Data Explorer é usado para a análise de grandes quantidades de dados de log 
 - **Formato ORC (Optimized Row Columnar)**: Formato de arquivo altamente otimizado para armazenamento de dados em colunas, frequentemente utilizado em big data. Ele melhora a eficiência de leitura e escrita, economizando espaço e acelerando as consultas.
 
 # HDInsight
-- **Azure HDInsight**: serviço do Azure que oferece clusters de big data de código aberto baseados em frameworks populares como Apache Hadoop, Spark, Hive, Kafka, HBase, entre outros. O HDInsight permite processar grandes volumes de dados, realizar análises em tempo real, e executar pipelines de machine learning e ETL em ambientes escaláveis. O HDInsight é usado para processar grandes quantidades de dados usando o Hadoop. 
+Serviço do Azure que oferece clusters de big data de código aberto baseados em frameworks populares como Apache Hadoop, Spark, Hive, Kafka, HBase, entre outros. O HDInsight permite processar grandes volumes de dados, realizar análises em tempo real, e executar pipelines de machine learning e ETL em ambientes escaláveis. O HDInsight é usado para processar grandes quantidades de dados usando o Hadoop. 
 
 # Stream Analytics
 O **Stream Analytics** pode lidar com o processamento de fluxo do Kafka para o Data Lake.
