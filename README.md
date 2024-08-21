@@ -59,7 +59,7 @@ A criação de um índice permite que você pesquise dados em uma tabela com mai
 
 # Azure Synapse Analytics
 - **Azure Synapse Analytics**: Serviço nativo de análise do Azure criado no Spark  que combina big data e análise de dados empresariais. Ele permite o processamento de consultas SQL e a execução de pipelines de dados em grande escala, fornecendo insights em tempo real. O Stream Analytics permite agregar dados de um período específico antes de serem gravados em um data lake.
-
+- 
 # Data Warehouse
 - **Data Warehouse**: É um sistema de armazenamento de dados projetado para análise e geração de relatórios. Ele integra dados de várias fontes, estruturados e semiestruturados, otimizado para consultas analíticas e relatórios históricos. Data Warehouses são usados em soluções de BI para suportar decisões empresariais. O **Azure Synapse Analytics** é uma solução de data warehouse, que combina capacidades de processamento de big data e análise de dados empresariais. Os data warehouses usam tabelas de fatos e de dimensões em um esquema em estrela/floco de neve.
 
@@ -78,6 +78,7 @@ em uma tabela.
 
 # Apache Gremlin
 - **Apache Gremlin**: Linguagem de consulta usada para trabalhar com bancos de dados de grafos. Ele permite consultas complexas em estruturas de dados de grafos, que são compostas de vértices e arestas.
+O Gremlin é usado para dados em um grafo. As entidades são definidas como vértices que formam nós. Os nós são conectados por bordas que representam relações.
 
 # Apache Cassandra
 - **Apache Cassandra**: Banco de dados NoSQL altamente escalável e distribuído, projetado para lidar com grandes volumes de dados em múltiplos servidores, sem pontos de falha. A API do Cassandra é consultada usando SQL. 
@@ -87,6 +88,9 @@ em uma tabela.
 
 # MongoDB
 - **MongoDB**: Banco de dados NoSQL baseado em documentos. Ele armazena dados em formato JSON-like, proporcionando flexibilidade na modelagem de dados. A API do MongoDB também armazena dados no formato BSON.
+
+# PostgreSQL
+O PostgreSQL é um banco de dados de objetos híbrido e relacional. Você pode armazenar dados em tabelas relacionais ou armazenar tipos de dados personalizados com propriedades não relacionais.
 
 # Azure Data Lake
 - **Azure Data Lake**: Serviço de armazenamento escalável e seguro no Azure, otimizado para grandes volumes de dados. Ele é projetado para processar dados de qualquer tipo e tamanho para análise e processamento em grande escala. O Data Lake Storage Gen2 é usado para armazenar grandes quantidades de dados a serem processados por serviços como o Databricks, o Azure Synapse Analytics e o HDInsight. [Ver mais](https://learn.microsoft.com/pt-br/training/modules/explore-provision-deploy-non-relational-data-services-azure/3-azure-data-lake-gen2)
@@ -110,7 +114,7 @@ em uma tabela.
 - **Formato ORC (Optimized Row Columnar)**: Formato de arquivo altamente otimizado para armazenamento de dados em colunas, frequentemente utilizado em big data. Ele melhora a eficiência de leitura e escrita, economizando espaço e acelerando as consultas.
 
 # HDInsight
-- **Azure HDInsight**: serviço do Azure que oferece clusters de big data de código aberto baseados em frameworks populares como Apache Hadoop, Spark, Hive, Kafka, HBase, entre outros. O HDInsight permite processar grandes volumes de dados, realizar análises em tempo real, e executar pipelines de machine learning e ETL em ambientes escaláveis.
+- **Azure HDInsight**: serviço do Azure que oferece clusters de big data de código aberto baseados em frameworks populares como Apache Hadoop, Spark, Hive, Kafka, HBase, entre outros. O HDInsight permite processar grandes volumes de dados, realizar análises em tempo real, e executar pipelines de machine learning e ETL em ambientes escaláveis. O HDInsight é usado para processar grandes quantidades de dados usando o Hadoop. 
 
 # Stream Analytics
 O **Stream Analytics** pode lidar com o processamento de fluxo do Kafka para o Data Lake.
@@ -139,7 +143,10 @@ As dimensões são usadas para agregar dados. Entidades que serão usadas para f
   - **Uso**: Utilizado para obter uma visão geral dos dados, resumir informações detalhadas e entender tendências em um nível mais amplo.
  
 # O que é um pipeline?
-Sequência automatizada de etapas ou processos que são executados em ordem para alcançar um objetivo específico, como a construção, teste, e entrega de software. É uma maneira de automatizar tarefas repetitivas e garantir que cada etapa seja executada de forma consistente e eficiente.
+Sequência automatizada de etapas ou processos que são executados em ordem para alcançar um objetivo específico, como a construção, teste, e entrega de software. É uma maneira de automatizar tarefas repetitivas e garantir que cada etapa seja executada de forma consistente e eficiente. [Ver mais](https://learn.microsoft.com/pt-br/training/modules/examine-components-of-modern-data-warehouse/3-data-ingestion-pipelines)
+
+# O que é Normalização?
+A normalização é um processo para reduzir a duplicação de dados. Isso pode ser feito separando entidades em suas próprias tabelas e estabelecendo relações entre as tabelas. [Ver mais](https://learn.microsoft.com/pt-br/training/modules/explore-relational-data-offerings/3-normalization)
 
 # Administradores de Banco de Dados
 Gerenciam bancos de dados, atribuindo permissões aos usuários, armazenando cópias de backup de dados e restaurando dados em caso de falhas.
