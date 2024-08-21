@@ -68,9 +68,7 @@ A criação de um índice permite que você pesquise dados em uma tabela com mai
 # Blobs
 - **Blobs**: São objetos de armazenamento no Azure Blob Storage usados para armazenar grandes quantidades de dados não estruturados, como imagens, vídeos, documentos e backups. Os **blobs de páginas** são otimizados para acesso aleatório e usados para VHDs [Ver mais](https://learn.microsoft.com/pt-br/training/modules/explore-provision-deploy-non-relational-data-services-azure/2-azure-blob-storage)
 
-# Instruções SQL
-- **Instruções SQL**: Conjunto de comandos usados para gerenciar e consultar bancos de dados relacionais.
-Algumas instruções:
+# Algumas Instruções SQL
   - **SELECT - INTO** faz uma inserção
 em uma tabela.
   - **SELECT - OVER** determina o particionamento e a ordenação do conjunto de linhas antes que uma função de janela seja aplicada
