@@ -75,6 +75,7 @@ em uma tabela.
   - **INSERT - VALUES** insere valores em uma única linha.
   - **SELECT - HAVING** filtra dados.
   - **MERGE**: permite combinar dados de duas tabelas com base em uma condição específica, realizando operações de inserção, atualização ou exclusão em uma única instrução.
+[Ver mais](https://learn.microsoft.com/pt-br/sql/t-sql/queries/select-into-clause-transact-sql?view=sql-server-ver16)
 
 # Apache Gremlin
 Linguagem de consulta usada para trabalhar com bancos de dados de grafos. Ele permite consultas complexas em estruturas de dados de grafos, que são compostas de vértices e arestas.
@@ -82,6 +83,9 @@ O Gremlin é usado para dados em um grafo. As entidades são definidas como vér
 
 # Apache Cassandra
 Banco de dados NoSQL altamente escalável e distribuído, projetado para lidar com grandes volumes de dados em múltiplos servidores, sem pontos de falha. A API do Cassandra é consultada usando SQL. 
+
+# Apache Hadoop
+É uma plataforma de código aberto usada para processar e armazenar grandes quantidades de dados. Ele funciona distribuindo esses dados por vários computadores e analisando-os de forma paralela. Essa estrutura permite lidar com grandes volumes de dados de maneira eficiente, mesmo em ambientes com hardware comum.
 
 # CosmosDB
 Banco de dados NoSQL distribuído globalmente que oferece suporte a vários modelos de dados (chave-valor, documento, gráfico, etc.). Ele é conhecido por sua baixa latência e alta disponibilidade.
@@ -97,6 +101,9 @@ Serviço de armazenamento escalável e seguro no Azure, otimizado para grandes v
 
 # Azure Data Explorer
 O Data Explorer é usado para a análise de grandes quantidades de dados de log de texto, sites e dispositivos IoT e usa uma linguagem de consulta comum. É um serviço de análise e banco de dados de alto desempenho otimizado para ingestão e consulta de dados em lote ou streaming com um elemento de série temporal e que pode ser usado como um serviço autônomo do Azure ou como um tempo de execução do Azure Synapse Data Explorer em um espaço de trabalho do Azure Synapse Analytics.
+
+# Data Factory
+O Data Factory permite orquestrar o fluxo de dados sem codificação usando pipelines.
 
 # Instância Gerenciada de SQL
 É um serviço de plataforma como serviço (PaaS) que oferece uma instância completa de SQL Server na nuvem. Ele oferece compatibilidade total com o SQL Server 2016 e é adequado para migrações de ambientes locais para a nuvem. Permite que você migre um servidor do SQL inteiro para a nuvem sem a necessidade de gerenciar a infraestrutura depois da migração. 
@@ -154,6 +161,12 @@ Sequência automatizada de etapas ou processos que são executados em ordem para
 
 # O que é um Procedimento armazenado?
 Um procedimento armazenado pode encapsular qualquer tipo de lógica de negócios que possa ser reutilizado no aplicativo. Um procedimento armazenado pode modificar dados existentes, bem como adicionar novas entradas a tabelas. Um procedimento armazenado pode ser executado em um aplicativo, bem como no servidor. [Ver mais](https://learn.microsoft.com/pt-br/training/modules/explore-relational-data-offerings/5-database-objects)
+
+# O que é o procedimento em lote?
+O processamento em lote é usado para executar análises complexas. O processamento em lote manipula uma grande quantidade de dados de cada vez. O processamento em lote geralmente é medido em minutos e horas.
+
+# O que é uma Instância Gerenciada?
+Uma instância hospedada do SQL Server com manutenção automatizada, que permite uma configuração mais flexível do que o BD de SQL do Azure, mas com mais responsabilidade administrativa para o proprietário. 
 
 # Administradores de Banco de Dados
 Gerenciam bancos de dados, atribuindo permissões aos usuários, armazenando cópias de backup de dados e restaurando dados em caso de falhas.
