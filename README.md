@@ -125,7 +125,7 @@ Serviço de banco de dados relacional totalmente gerenciado que oferece alta dis
 Serviço do Azure que oferece clusters de big data de código aberto baseados em frameworks populares como Apache Hadoop, Spark, Hive, Kafka, HBase, entre outros. O HDInsight permite processar grandes volumes de dados, realizar análises em tempo real, e executar pipelines de machine learning e ETL em ambientes escaláveis. O HDInsight é usado para processar grandes quantidades de dados usando o Hadoop. 
 
 # Stream Analytics
-O **Stream Analytics** pode lidar com o processamento de fluxo do Kafka para o Data Lake.
+O **Stream Analytics** pode lidar com o processamento de fluxo do Kafka para o Data Lake. Permite agregar dados em uma janela de tempo específica antes que os dados sejam gravados em um data lake.
 
 # Fontes para processamento de fluxo
 Os serviços a seguir são comumente usados para ingerir dados para processamento de fluxo no Azure:
