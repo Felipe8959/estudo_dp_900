@@ -11,13 +11,6 @@
 
 ## Conceitos de Dados Relacionais
 - **Conceitos**: Bancos de dados relacionais são organizados em tabelas que representam entidades. As relações entre tabelas são feitas através de chaves primárias (únicas para cada registro) e chaves estrangeiras (que referenciam chaves primárias em outras tabelas).
-- **SQL e Operações Comuns**:
-  - **SELECT**: Consulta para recuperar dados.
-  - **JOIN**: Combina dados de duas ou mais tabelas.
-  - **Agregações**: Operações como SUM, COUNT, AVG aplicadas em grupos de dados.
-- **Serviços de Banco de Dados Relacionais no Azure**:
-  - Azure SQL Database
-  - SQL Managed Instance
 
 ## Conceitos de Dados Não Relacionais
 - **Diferença entre Bancos de Dados NoSQL e Relacionais**: Bancos NoSQL não utilizam esquema fixo e são mais flexíveis, enquanto os relacionais seguem um esquema rígido com tabelas, colunas e tipos de dados definidos.
