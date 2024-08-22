@@ -1,11 +1,16 @@
 # Diferença entre dados estruturados, semiestruturados e não estruturados
-- **Dados Estruturados**: Dados organizados em um formato pré-definido, como tabelas de bancos de dados com colunas e tipos de dados específicos.
-- **Dados Semiestruturados**: Dados parcialmente estruturados, como JSON ou XML, que possuem uma organização hierárquica, mas não seguem um esquema rígido.
-- **Dados Não Estruturados**: Dados que não possuem uma organização ou estrutura definida, como vídeos, imagens, ou textos livres.
+## Dados Estruturados: 
+Dados organizados em um formato pré-definido, como tabelas de bancos de dados com colunas e tipos de dados específicos.
+## Dados Semiestruturados
+Dados parcialmente estruturados, como JSON ou XML, que possuem uma organização hierárquica, mas não seguem um esquema rígido.
+## Dados Não Estruturados
+Dados que não possuem uma organização ou estrutura definida, como vídeos, imagens, ou textos livres.
 
 # Compreensão de serviços de dados: Bancos de Dados Relacionais e NoSQL
-- **Bancos de Dados Relacionais**: Estruturados em tabelas com chaves primárias e estrangeiras, usando SQL para consultas. Ex.: MySQL, PostgreSQL.
-- **Bancos de Dados NoSQL**: Flexíveis em estrutura, usados para dados distribuídos e de grande escala. Ex.: MongoDB, Cassandra.
+## Bancos de Dados Relacionais
+Estruturados em tabelas com chaves primárias e estrangeiras, usando SQL para consultas. Ex.: MySQL, PostgreSQL.
+## Bancos de Dados NoSQL
+Flexíveis em estrutura, usados para dados distribuídos e de grande escala. Ex.: MongoDB, Cassandra.
 
 # Modelos de Dados
 
@@ -159,7 +164,22 @@ Um procedimento armazenado pode encapsular qualquer tipo de lógica de negócios
 O processamento em lote é usado para executar análises complexas. O processamento em lote manipula uma grande quantidade de dados de cada vez. O processamento em lote geralmente é medido em minutos e horas.
 
 # O que é uma Instância Gerenciada?
-Uma instância hospedada do SQL Server com manutenção automatizada, que permite uma configuração mais flexível do que o BD de SQL do Azure, mas com mais responsabilidade administrativa para o proprietário. 
+Uma instância hospedada do SQL Server com manutenção automatizada, que permite uma configuração mais flexível do que o BD de SQL do Azure, mas com mais responsabilidade administrativa para o proprietário.
+
+# O que é um pool?
+Em ambientes como Apache Spark e SQL, o conceito de *pool* também se aplica de maneira específica para gerenciar e otimizar o uso de recursos computacionais.
+
+### **Apache Spark: Pool de Recursos (Resource Pools)**
+No Apache Spark, um *pool* de recursos é utilizado para gerenciar como os recursos (CPU, memória) são distribuídos entre diferentes tarefas ou jobs. Isso é particularmente útil em ambientes com múltiplos usuários ou aplicativos que compartilham o mesmo cluster.
+
+- **Exemplo de uso**: Se você tiver dois aplicativos rodando simultaneamente em um cluster Spark, pode criar dois *pools* de recursos para garantir que ambos recebam uma parte justa dos recursos do cluster. Um *pool* pode ser configurado para alocar, por exemplo, 60% dos recursos para uma tarefa mais importante e 40% para uma menos crítica.
+
+### **SQL: Pool de Conexões (Connection Pool)**
+Em SQL, especialmente em sistemas de bancos de dados, um *pool de conexões* é um conjunto de conexões ao banco de dados que são mantidas ativas para reutilização. Isso melhora o desempenho das aplicações, pois evita o custo associado a criar e destruir conexões para cada interação com o banco de dados.
+
+- **Exemplo de uso**: Suponha que você tenha uma aplicação web que realiza várias consultas ao banco de dados. Em vez de abrir e fechar uma nova conexão a cada consulta, a aplicação utiliza o *pool de conexões* para pegar uma conexão já existente, executar a consulta e depois devolver a conexão ao *pool* para ser reutilizada.
+
+Em ambos os casos, o objetivo do *pool* é otimizar o uso de recursos, evitando desperdício e melhorando o desempenho geral do sistema.
 
 # Administradores de Banco de Dados
 Gerenciam bancos de dados, atribuindo permissões aos usuários, armazenando cópias de backup de dados e restaurando dados em caso de falhas.
