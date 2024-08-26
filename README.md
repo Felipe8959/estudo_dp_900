@@ -33,6 +33,7 @@ Flexíveis em estrutura, usados para dados distribuídos e de grande escala. Ex.
 - **Ferramentas de Análise de Dados no Azure**:
   - Azure Synapse Analytics
   - Power BI
+  - Databricks
 
 ## Dados transacionais
 Um sistema transacional registra transações que encapsulam eventos específicos que a organização deseja controlar. Uma transação pode ser financeira, como a movimentação de dinheiro entre contas em um sistema bancário, ou pode fazer parte de um sistema de varejo, controlando pagamentos de bens e serviços de clientes. Pense na transação como uma unidade de trabalho pequena e discreta.
