@@ -150,6 +150,9 @@ As dimensões são usadas para agregar dados. Entidades que serão usadas para f
   - **Definição**: Processo oposto ao drill down, movendo-se de um nível de detalhe para um nível mais agregado.
   - **Exemplo**: Se você estiver visualizando as vendas mensais, o drill up pode resumir essas informações para o nível trimestral ou anual.
   - **Uso**: Utilizado para obter uma visão geral dos dados, resumir informações detalhadas e entender tendências em um nível mais amplo.
+
+# Lift and Shift
+Estratégia de migração na qual aplicativos e workloads são transferidos de um ambiente on-premises (ou de outro provedor de nuvem) para a nuvem da Microsoft Azure sem grandes modificações ou refatoração. O objetivo é mover a aplicação da maneira mais rápida e simples possível, mantendo sua arquitetura original.
  
 # O que é um pipeline?
 Sequência automatizada de etapas ou processos que são executados em ordem para alcançar um objetivo específico, como a construção, teste, e entrega de software. É uma maneira de automatizar tarefas repetitivas e garantir que cada etapa seja executada de forma consistente e eficiente. [Ver mais](https://learn.microsoft.com/pt-br/training/modules/examine-components-of-modern-data-warehouse/3-data-ingestion-pipelines)
