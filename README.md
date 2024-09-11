@@ -115,7 +115,10 @@ Oferece a execução do SQL Server em máquinas virtuais no Azure, permitindo qu
 
 # Banco de Dados SQL do Azure
 Serviço de banco de dados relacional totalmente gerenciado que oferece alta disponibilidade, escalabilidade automática e backups automatizados. Ele é baseado no mecanismo do Microsoft SQL Server. O Banco de Dados SQL do Azure é uma instância de SQL de PaaS sem servidor. Permite provisionar um banco de dados individual em um servidor dedicado e tem escalabilidade sob demanda.
-é um serviço gerenciado e sem servidor, que evita o uso de licenças do Windows Server e permite que cada carga de trabalho tenha sua própria instância do serviço usado
+
+É um serviço gerenciado e sem servidor, que evita o uso de licenças do Windows Server e permite que cada carga de trabalho tenha sua própria instância do serviço usado.
+
+Permite criar um banco de dados individual que pode escalar verticalmente e reduzir verticalmente sem tempo de inatividade.
 
 # Bancos de Dados OLAP
 - **Bancos de Dados OLAP (Online Analytical Processing)**: São projetados para consultas complexas e análises multidimensionais, ideais para cenários de business intelligence (BI). Eles permitem a agregação de grandes volumes de dados e fornecem uma visão consolidada para tomada de decisão.
