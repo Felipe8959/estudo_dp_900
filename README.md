@@ -43,6 +43,9 @@ Os bancos de dados transacionais são altamente normalizados e são otimizados p
 O processamento de dados analíticos normalmente usa sistemas somente leitura (ou read-mostly) que armazenam grandes volumes de dados históricos ou métricas de negócios.
 As cargas de trabalho de dados analíticos são altamente desnormalizadas e otimizadas para operações de leitura.
 
+# Azure Data Lake
+Serviço de armazenamento escalável e seguro no Azure, otimizado para grandes volumes de dados. Ele é projetado para processar dados de qualquer tipo e tamanho para análise e processamento em grande escala. O Data Lake Storage Gen2 é usado para armazenar grandes quantidades de dados a serem processados por serviços como o Databricks, o Azure Synapse Analytics e o HDInsight. [Ver mais](https://learn.microsoft.com/pt-br/training/modules/explore-provision-deploy-non-relational-data-services-azure/3-azure-data-lake-gen2)
+
 # Delta Lake
 O Delta Lake é uma camada de armazenamento de código aberto que adiciona suporte ao Data Lake Storage para consistência transacional.
 É um serviço de análise e banco de dados de alto desempenho otimizado para ingestão e consulta de dados em lote ou streaming com um elemento de série temporal e que pode ser usado como um serviço autônomo do Azure ou como um tempo de execução do Azure Synapse Data Explorer em um espaço de trabalho do Azure Synapse Analytics.
@@ -99,9 +102,6 @@ Banco de dados NoSQL baseado em documentos. Ele armazena dados em formato JSON-l
 
 # PostgreSQL
 O PostgreSQL é um banco de dados de objetos híbrido e relacional. Você pode armazenar dados em tabelas relacionais ou armazenar tipos de dados personalizados com propriedades não relacionais.
-
-# Azure Data Lake
-Serviço de armazenamento escalável e seguro no Azure, otimizado para grandes volumes de dados. Ele é projetado para processar dados de qualquer tipo e tamanho para análise e processamento em grande escala. O Data Lake Storage Gen2 é usado para armazenar grandes quantidades de dados a serem processados por serviços como o Databricks, o Azure Synapse Analytics e o HDInsight. [Ver mais](https://learn.microsoft.com/pt-br/training/modules/explore-provision-deploy-non-relational-data-services-azure/3-azure-data-lake-gen2)
 
 # Azure Data Explorer
 O Data Explorer é usado para a análise de grandes quantidades de dados de log de texto, sites e dispositivos IoT e usa uma linguagem de consulta comum. É um serviço de análise e banco de dados de alto desempenho otimizado para ingestão e consulta de dados em lote ou streaming com um elemento de série temporal e que pode ser usado como um serviço autônomo do Azure ou como um tempo de execução do Azure Synapse Data Explorer em um espaço de trabalho do Azure Synapse Analytics.
