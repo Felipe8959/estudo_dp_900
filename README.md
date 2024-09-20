@@ -47,10 +47,15 @@ As cargas de trabalho de dados analíticos são altamente desnormalizadas e otim
 O Delta Lake é uma camada de armazenamento de código aberto que adiciona suporte ao Data Lake Storage para consistência transacional.
 É um serviço de análise e banco de dados de alto desempenho otimizado para ingestão e consulta de dados em lote ou streaming com um elemento de série temporal e que pode ser usado como um serviço autônomo do Azure ou como um tempo de execução do Azure Synapse Data Explorer em um espaço de trabalho do Azure Synapse Analytics.
 
-# OLTP
+# OLTP (Online Transaction Processing)
+OLTP refere-se ao Processamento de Transações Online.
 O trabalho executado por sistemas transacionais é geralmente conhecido como OLTP (Processamento de Transações Online).
 Os sistemas OLTP normalmente são usados para dar suporte a aplicativos dinâmicos que processam dados de negócios, geralmente chamados de aplicativos de LOB (linha de negócios).
 As soluções OLTP dependem de um sistema de banco de dados no qual o armazenamento de dados é otimizado para operações de leitura e gravação para dar suporte a cargas de trabalho transacionais nas quais os registros de dados são criados, recuperados, atualizados e excluídos (essas operações são geralmente chamadas de CRUD).
+
+# OLAP (Online Analytical Processing)
+Bancos de Dados OLAP (Processamento Analítico Online) São projetados para consultas complexas e análises multidimensionais, ideais para cenários de business intelligence (BI). Eles permitem a agregação de grandes volumes de dados e fornecem uma visão consolidada para tomada de decisão.
+OLAP é usado para análise de dados, suporte à decisão e criação de relatórios. Diferente do OLTP, o OLAP é otimizado para consultas complexas e análise de dados históricos.
 
 # Armazenamento de chave/valor
 Um armazenamento de chave/valor é usado para pesquisas simples baseadas em uma chave única para obter um valor único.  permite armazenar dados em um formato de duas colunas sem exigir um sistema de gerenciamento de dados complexo. O armazenamento de tabelas é usado para armazenar pares de chave/valor em partições. [Ver mais](https://learn.microsoft.com/pt-br/training/modules/explore-provision-deploy-non-relational-data-services-azure/5-azure-tables)
@@ -119,9 +124,6 @@ Serviço de banco de dados relacional totalmente gerenciado que oferece alta dis
 É um serviço gerenciado e sem servidor, que evita o uso de licenças do Windows Server e permite que cada carga de trabalho tenha sua própria instância do serviço usado.
 
 Permite criar um banco de dados individual que pode escalar verticalmente e reduzir verticalmente sem tempo de inatividade.
-
-# Bancos de Dados OLAP
-- **Bancos de Dados OLAP (Online Analytical Processing)**: São projetados para consultas complexas e análises multidimensionais, ideais para cenários de business intelligence (BI). Eles permitem a agregação de grandes volumes de dados e fornecem uma visão consolidada para tomada de decisão.
 
 # Formato ORC
 - **Formato ORC (Optimized Row Columnar)**: Formato de arquivo altamente otimizado para armazenamento de dados em colunas, frequentemente utilizado em big data. Ele melhora a eficiência de leitura e escrita, economizando espaço e acelerando as consultas.
