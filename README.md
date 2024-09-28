@@ -178,6 +178,7 @@ Uma instância hospedada do SQL Server com manutenção automatizada, que permit
 
 # O que é um pool?
 Em ambientes como Apache Spark e SQL, o conceito de *pool* também se aplica de maneira específica para gerenciar e otimizar o uso de recursos computacionais.
+Pool elástico: recurso que permite a gestão de múltiplos bancos de dados individuais de forma conjunta.
 
 ### **Apache Spark: Pool de Recursos (Resource Pools)**
 No Apache Spark, um *pool* de recursos é utilizado para gerenciar como os recursos (CPU, memória) são distribuídos entre diferentes tarefas ou jobs. Isso é particularmente útil em ambientes com múltiplos usuários ou aplicativos que compartilham o mesmo cluster.
