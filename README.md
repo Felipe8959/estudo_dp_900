@@ -42,6 +42,20 @@ Flexíveis em estrutura, usados para dados distribuídos e de grande escala. Ex.
 - **Prescritiva:** Que ações devemos tomar?
 - [Ver mais] (https://www.microsoft.com/pt-br/microsoft-365/excel/data-analysis)
 
+## Níveis de complexidade na estruturação de dados JSON
+### Exemplo de uma matriz aninhada (nested array):
+`` json
+{
+  "nome": "Pedro",
+  "notas": [
+    [8, 9, 7],
+    [6, 8, 10],
+    [9, 7, 8]
+  ]
+}
+´´
+Neste exemplo, a chave notas possui uma matriz que contém outras matrizes dentro.
+
 ## Dados transacionais
 Um sistema transacional registra transações que encapsulam eventos específicos que a organização deseja controlar. Uma transação pode ser financeira, como a movimentação de dinheiro entre contas em um sistema bancário, ou pode fazer parte de um sistema de varejo, controlando pagamentos de bens e serviços de clientes. Pense na transação como uma unidade de trabalho pequena e discreta.
 Os bancos de dados transacionais são altamente normalizados e são otimizados para operações CRUD.
