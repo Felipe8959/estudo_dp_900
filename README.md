@@ -46,7 +46,7 @@ Flexíveis em estrutura, usados para dados distribuídos e de grande escala. Ex.
 ### Exemplo de uma matriz aninhada (nested array):
 ``` json
 {
-  "nome": "Pedro",
+  "nome": "Felipe",
   "notas": [
     [8, 9, 7],
     [6, 8, 10],
@@ -54,7 +54,33 @@ Flexíveis em estrutura, usados para dados distribuídos e de grande escala. Ex.
   ]
 }
 ```
-Neste exemplo, a chave notas possui uma matriz que contém outras matrizes dentro.
+Neste exemplo, a chave `notas` possui uma matriz que contém outras matrizes dentro.
+
+### Exemplo de um objeto aninhado (nested object):
+``` json
+{
+  "nome": "Felipe",
+  "endereco": {
+    "rua": "Av. Principal",
+    "numero": 123,
+    "cidade": {
+      "nome": "São Paulo",
+      "estado": "SP"
+    }
+  }
+}
+```
+Neste caso, o objeto `endereco` contém outro objeto dentro dele (o objeto `cidade`).
+
+### Exemplo de um objeto raiz (root object):
+``` json
+{
+  "id": 1,
+  "titulo": "Introdução ao JSON",
+  "autor": "Felipe Santos"
+}
+```
+Aqui, o objeto representado no nível mais alto é o objeto raiz, que contém pares chave-valor diretamente sem aninhamento.
 
 ## Dados transacionais
 Um sistema transacional registra transações que encapsulam eventos específicos que a organização deseja controlar. Uma transação pode ser financeira, como a movimentação de dinheiro entre contas em um sistema bancário, ou pode fazer parte de um sistema de varejo, controlando pagamentos de bens e serviços de clientes. Pense na transação como uma unidade de trabalho pequena e discreta.
