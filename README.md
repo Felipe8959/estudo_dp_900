@@ -40,7 +40,7 @@ Flexíveis em estrutura, usados para dados distribuídos e de grande escala. Ex.
 - **Diagnóstica:** Por que acontecem?
 - **Preditiva:** O que vai acontecer?
 - **Prescritiva:** Que ações devemos tomar?
-- [Ver mais] (https://www.microsoft.com/pt-br/microsoft-365/excel/data-analysis)
+- [Ver mais](https://www.microsoft.com/pt-br/microsoft-365/excel/data-analysis)
 
 ## Níveis de complexidade na estruturação de dados JSON
 ### Exemplo de uma matriz aninhada (nested array):
