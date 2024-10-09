@@ -82,6 +82,15 @@ Neste caso, o objeto `endereco` contém outro objeto dentro dele (o objeto `cida
 ```
 Aqui, o objeto representado no nível mais alto é o objeto raiz, que contém pares chave-valor diretamente sem aninhamento.
 
+## Diferença entre Schema Estrela e Floco de neve (star e snowflake)
+
+| Característica          | Esquema Estrela            | Esquema Floco de Neve      |
+|-------------------------|----------------------------|----------------------------|
+| Estrutura               | Dimensões desnormalizadas   | Dimensões normalizadas      |
+| Complexidade            | Simples, menos tabelas      | Complexo, mais tabelas      |
+| Desempenho de consulta  | Geralmente mais rápido      | Geralmente mais lento       |
+| Redundância de dados    | Mais redundante             | Menos redundante            |
+
 ## Dados transacionais
 Um sistema transacional registra transações que encapsulam eventos específicos que a organização deseja controlar. Uma transação pode ser financeira, como a movimentação de dinheiro entre contas em um sistema bancário, ou pode fazer parte de um sistema de varejo, controlando pagamentos de bens e serviços de clientes. Pense na transação como uma unidade de trabalho pequena e discreta.
 Os bancos de dados transacionais são altamente normalizados e são otimizados para operações CRUD.
