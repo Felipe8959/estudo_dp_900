@@ -36,10 +36,10 @@ Flexíveis em estrutura, usados para dados distribuídos e de grande escala. Ex.
   - Databricks
 
 ## Tipos de análise de dados
-**Descritiva:** O que acontece?
-**Diagnóstica:** Por que acontecem?
-**Preditiva:** O que vai acontecer?
-**Prescritiva:** Que ações devemos tomar?
+- **Descritiva:** O que acontece?
+- **Diagnóstica:** Por que acontecem?
+- **Preditiva:** O que vai acontecer?
+- **Prescritiva:** Que ações devemos tomar?
 [Ver mais] (https://www.microsoft.com/pt-br/microsoft-365/excel/data-analysis)
 
 ## Dados transacionais
