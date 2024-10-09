@@ -44,7 +44,7 @@ Flexíveis em estrutura, usados para dados distribuídos e de grande escala. Ex.
 
 ## Níveis de complexidade na estruturação de dados JSON
 ### Exemplo de uma matriz aninhada (nested array):
-`` bash
+``` json
 {
   "nome": "Pedro",
   "notas": [
@@ -53,7 +53,7 @@ Flexíveis em estrutura, usados para dados distribuídos e de grande escala. Ex.
     [9, 7, 8]
   ]
 }
-´´
+```
 Neste exemplo, a chave notas possui uma matriz que contém outras matrizes dentro.
 
 ## Dados transacionais
