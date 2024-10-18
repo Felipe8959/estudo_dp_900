@@ -1,39 +1,13 @@
-# Diferença entre dados estruturados, semiestruturados e não estruturados
-## Dados Estruturados: 
-Dados organizados em um formato pré-definido, como tabelas de bancos de dados com colunas e tipos de dados específicos.
-## Dados Semiestruturados
-Dados parcialmente estruturados, como JSON ou XML, que possuem uma organização hierárquica, mas não seguem um esquema rígido.
-## Dados Não Estruturados
-Dados que não possuem uma organização ou estrutura definida, como vídeos, imagens, ou textos livres.
+# Tipos de dados
+- **Dados Estruturados:** Dados organizados em um formato pré-definido, como tabelas de bancos de dados com colunas e tipos de dados específicos.
+- **Dados Semiestruturados:** Dados parcialmente estruturados, como JSON ou XML, que possuem uma organização hierárquica, mas não seguem um esquema rígido.
+- **Dados Não Estruturados:** Dados que não possuem uma organização ou estrutura definida, como vídeos, imagens, ou textos livres.
 
-# Compreensão de serviços de dados: Bancos de Dados Relacionais e NoSQL
-## Bancos de Dados Relacionais
-Estruturados em tabelas com chaves primárias e estrangeiras, usando SQL para consultas. Ex.: MySQL, PostgreSQL.
-## Bancos de Dados NoSQL
-Flexíveis em estrutura, usados para dados distribuídos e de grande escala. Ex.: MongoDB, Cassandra.
-
-# Modelos de Dados
-
-## Conceitos de Dados Relacionais
-- **Conceitos**: Bancos de dados relacionais são organizados em tabelas que representam entidades. As relações entre tabelas são feitas através de chaves primárias (únicas para cada registro) e chaves estrangeiras (que referenciam chaves primárias em outras tabelas).
-
-## Conceitos de Dados Não Relacionais
+# Tipos de banco de dados
+- **Bancos de Dados Relacionais:** Estruturados em tabelas com chaves primárias e estrangeiras, usando SQL para consultas. Ex.: MySQL, PostgreSQL.
+- **Bancos de Dados NoSQL:** Flexíveis em estrutura, usados para dados distribuídos e de grande escala. Ex.: MongoDB, Cassandra, Cosmos DB.
 - **Diferença entre Bancos de Dados NoSQL e Relacionais**: Bancos NoSQL não utilizam esquema fixo e são mais flexíveis, enquanto os relacionais seguem um esquema rígido com tabelas, colunas e tipos de dados definidos.
-- **Serviços de Banco de Dados NoSQL no Azure**:
-  - Azure Cosmos DB
 - **Casos de Uso de Dados Não Relacionais**: Ideal para grandes volumes de dados não estruturados ou semiestruturados, como redes sociais, catálogos de produtos e dados de IoT.
-
-## Conceitos de Análise de Dados
-- **Processamento de Dados para Análise**:
-  - **ETL** (Extract, Transform, Load): Processo de extração, transformação e carregamento de dados em um sistema de destino.
-  - **ELT** (Extract, Load, Transform): Processo em que os dados são carregados no sistema de destino antes de serem transformados.
-- **Armazenamento de Dados no Azure**:
-  - Azure Data Lake
-  - Armazenamento Blob
-- **Ferramentas de Análise de Dados no Azure**:
-  - Azure Synapse Analytics
-  - Power BI
-  - Databricks
 
 # Tipos de análise de dados
 - **Descritiva:** O que acontece?
@@ -107,13 +81,17 @@ Aqui, o objeto representado no nível mais alto é o objeto raiz, que contém pa
   - **MERGE**: permite combinar dados de duas tabelas com base em uma condição específica, realizando operações de inserção, atualização ou exclusão em uma única instrução.
 [Ver mais](https://learn.microsoft.com/pt-br/sql/t-sql/queries/select-into-clause-transact-sql?view=sql-server-ver16)
 
-# Dados transacionais
-Um sistema transacional registra transações que encapsulam eventos específicos que a organização deseja controlar. Uma transação pode ser financeira, como a movimentação de dinheiro entre contas em um sistema bancário, ou pode fazer parte de um sistema de varejo, controlando pagamentos de bens e serviços de clientes. Pense na transação como uma unidade de trabalho pequena e discreta.
-Os bancos de dados transacionais são altamente normalizados e são otimizados para operações CRUD.
-
-# Dados analíticos
-O processamento de dados analíticos normalmente usa sistemas somente leitura (ou read-mostly) que armazenam grandes volumes de dados históricos ou métricas de negócios.
-As cargas de trabalho de dados analíticos são altamente desnormalizadas e otimizadas para operações de leitura.
+# Conceitos de Análise de Dados
+- **Processamento de Dados para Análise**:
+  - **ETL** (Extract, Transform, Load): Processo de extração, transformação e carregamento de dados em um sistema de destino.
+  - **ELT** (Extract, Load, Transform): Processo em que os dados são carregados no sistema de destino antes de serem transformados.
+- **Armazenamento de Dados no Azure**:
+  - Azure Data Lake
+  - Armazenamento Blob
+- **Ferramentas de Análise de Dados no Azure**:
+  - Azure Synapse Analytics
+  - Power BI
+  - Databricks
 
 # Azure Data Lake
 Serviço de armazenamento escalável e seguro no Azure, otimizado para grandes volumes de dados. Ele é projetado para processar dados de qualquer tipo e tamanho para análise e processamento em grande escala. O Data Lake Storage Gen2 é usado para armazenar grandes quantidades de dados a serem processados por serviços como o Databricks, o Azure Synapse Analytics e o HDInsight. [Ver mais](https://learn.microsoft.com/pt-br/training/modules/explore-provision-deploy-non-relational-data-services-azure/3-azure-data-lake-gen2)
