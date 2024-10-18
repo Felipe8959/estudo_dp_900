@@ -117,13 +117,13 @@ Um armazenamento de chave/valor é usado para pesquisas simples baseadas em uma 
 A criação de um índice permite que você pesquise dados em uma tabela com mais eficiência. Em uma tabela que contém poucas linhas, o uso do índice provavelmente não será mais eficiente do que simplesmente ler a tabela inteira e localizar as linhas solicitadas pela consulta (nesse caso, o otimizador de consulta ignorará o índice). No entanto, quando uma tabela tem muitas linhas, os índices podem melhorar drasticamente o desempenho das consultas.
 
 # Azure Synapse Analytics
-- **Azure Synapse Analytics**: Serviço nativo de análise do Azure criado no Spark  que combina big data e análise de dados empresariais. Ele permite o processamento de consultas SQL e a execução de pipelines de dados em grande escala, fornecendo insights em tempo real. O Stream Analytics permite agregar dados de um período específico antes de serem gravados em um data lake.
-- 
+Serviço nativo de análise do Azure criado no Spark  que combina big data e análise de dados empresariais. Ele permite o processamento de consultas SQL e a execução de pipelines de dados em grande escala, fornecendo insights em tempo real. O Stream Analytics permite agregar dados de um período específico antes de serem gravados em um data lake.
+
 # Data Warehouse
-- **Data Warehouse**: É um sistema de armazenamento de dados projetado para análise e geração de relatórios. Ele integra dados de várias fontes, estruturados e semiestruturados, otimizado para consultas analíticas e relatórios históricos. Data Warehouses são usados em soluções de BI para suportar decisões empresariais. O **Azure Synapse Analytics** é uma solução de data warehouse, que combina capacidades de processamento de big data e análise de dados empresariais. Os data warehouses usam tabelas de fatos e de dimensões em um esquema em estrela/floco de neve.
+Sistema de armazenamento de dados projetado para análise e geração de relatórios. Ele integra dados de várias fontes, estruturados e semiestruturados, otimizado para consultas analíticas e relatórios históricos. Data Warehouses são usados em soluções de BI para suportar decisões empresariais. O **Azure Synapse Analytics** é uma solução de data warehouse, que combina capacidades de processamento de big data e análise de dados empresariais. Os data warehouses usam tabelas de fatos e de dimensões em um esquema em estrela/floco de neve.
 
 # Blobs
-- **Blobs**: São objetos de armazenamento no Azure Blob Storage usados para armazenar grandes quantidades de dados não estruturados, como imagens, vídeos, documentos e backups. Os **blobs de páginas** são otimizados para acesso aleatório e usados para VHDs [Ver mais](https://learn.microsoft.com/pt-br/training/modules/explore-provision-deploy-non-relational-data-services-azure/2-azure-blob-storage)
+Objetos de armazenamento no Azure Blob Storage usados para armazenar grandes quantidades de dados não estruturados, como imagens, vídeos, documentos e backups. Os **blobs de páginas** são otimizados para acesso aleatório e usados para VHDs [Ver mais](https://learn.microsoft.com/pt-br/training/modules/explore-provision-deploy-non-relational-data-services-azure/2-azure-blob-storage)
 
 # Apache Gremlin
 Linguagem de consulta usada para trabalhar com bancos de dados de grafos. Ele permite consultas complexas em estruturas de dados de grafos, que são compostas de vértices e arestas.
@@ -167,7 +167,7 @@ Serviço de banco de dados relacional totalmente gerenciado que oferece alta dis
 Permite criar um banco de dados individual que pode escalar verticalmente e reduzir verticalmente sem tempo de inatividade.
 
 # Formato ORC
-- **Formato ORC (Optimized Row Columnar)**: Formato de arquivo altamente otimizado para armazenamento de dados em colunas, frequentemente utilizado em big data. Ele melhora a eficiência de leitura e escrita, economizando espaço e acelerando as consultas.
+Optimized Row Columnar, formato de arquivo altamente otimizado para armazenamento de dados em colunas, frequentemente utilizado em big data. Ele melhora a eficiência de leitura e escrita, economizando espaço e acelerando as consultas.
 
 # HDInsight
 Serviço do Azure que oferece clusters de big data de código aberto baseados em frameworks populares como Apache Hadoop, Spark, Hive, Kafka, HBase, entre outros. O HDInsight permite processar grandes volumes de dados, realizar análises em tempo real, e executar pipelines de machine learning e ETL em ambientes escaláveis. O HDInsight é usado para processar grandes quantidades de dados usando o Hadoop. 
@@ -177,7 +177,6 @@ O **Stream Analytics** pode lidar com o processamento de fluxo do Kafka para o D
 
 # Fontes para processamento de fluxo
 Os serviços a seguir são comumente usados para ingerir dados para processamento de fluxo no Azure:
-
 - **Hubs de Eventos do Azure**: um serviço de ingestão de dados que você pode usar para gerenciar filas de dados de eventos, garantindo que cada evento seja processado em ordem, exatamente uma vez.
 - **Hub IoT do Azure**: um serviço de ingestão de dados semelhante aos Hubs de Eventos do Azure, mas otimizado para gerenciar dados de eventos de dispositivos da Internet das Coisas (IoT).
 - **Azure Data Lake Store Gen 2**: um serviço de armazenamento altamente escalonável que é frequentemente usado em cenários de processamento em lotes, mas que também pode ser usado como fonte de dados de streaming.
@@ -211,8 +210,8 @@ Sequência automatizada de etapas ou processos que são executados em ordem para
 # O que é um Procedimento armazenado?
 Um procedimento armazenado pode encapsular qualquer tipo de lógica de negócios que possa ser reutilizado no aplicativo. Um procedimento armazenado pode modificar dados existentes, bem como adicionar novas entradas a tabelas. Um procedimento armazenado pode ser executado em um aplicativo, bem como no servidor. [Ver mais](https://learn.microsoft.com/pt-br/training/modules/explore-relational-data-offerings/5-database-objects)
 
-# O que é o procedimento em lote?
-O processamento em lote é usado para executar análises complexas. O processamento em lote manipula uma grande quantidade de dados de cada vez. O processamento em lote geralmente é medido em minutos e horas.
+# O que é o processamento em lote?
+Usado para executar análises complexas. O processamento em lote manipula uma grande quantidade de dados de cada vez. O processamento em lote geralmente é medido em minutos e horas.
 
 # O que é uma Instância Gerenciada?
 Uma instância hospedada do SQL Server com manutenção automatizada, que permite uma configuração mais flexível do que o BD de SQL do Azure, mas com mais responsabilidade administrativa para o proprietário.
