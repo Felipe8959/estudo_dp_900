@@ -92,11 +92,14 @@ Aqui, o objeto representado no nível mais alto é o objeto raiz, que contém pa
 | Redundância de dados    | Mais redundante             | Menos redundante            |
 
 # Tipos de instrução SQL
+-**DQL>** Linguagem de consulta de dados
+-**DML:** Linguagem de manipulação de dados
+-**DDL:** Linguagem de definição de dados
+-**DCL:** Linguagem de controle de dados
 <img src="https://arquivo.devmedia.com.br/artigos/destaques/guia/SQL.png" alt="Texto Alternativo" width="500"/>
 
 ## Outras
-  - **SELECT - INTO** faz uma inserção
-em uma tabela.
+  - **SELECT - INTO** faz uma inserção em uma tabela.
   - **SELECT - OVER** determina o particionamento e a ordenação do conjunto de linhas antes que uma função de janela seja aplicada
   - **INSERT - VALUES** insere valores em uma única linha.
   - **SELECT - HAVING** filtra dados.
