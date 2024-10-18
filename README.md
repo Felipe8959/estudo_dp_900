@@ -96,6 +96,7 @@ Aqui, o objeto representado no nível mais alto é o objeto raiz, que contém pa
   - **DML:** Linguagem de manipulação de dados
   - **DDL:** Linguagem de definição de dados
   - **DCL:** Linguagem de controle de dados
+  - **DTL:** Linguagem de transição de dados
 <img src="https://arquivo.devmedia.com.br/artigos/destaques/guia/SQL.png" alt="Texto Alternativo" width="500"/>
 
 ## Outras
