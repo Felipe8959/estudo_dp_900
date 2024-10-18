@@ -35,15 +35,15 @@ Flexíveis em estrutura, usados para dados distribuídos e de grande escala. Ex.
   - Power BI
   - Databricks
 
-## Tipos de análise de dados
+# Tipos de análise de dados
 - **Descritiva:** O que acontece?
 - **Diagnóstica:** Por que acontecem?
 - **Preditiva:** O que vai acontecer?
 - **Prescritiva:** Que ações devemos tomar?
 - [Ver mais](https://www.microsoft.com/pt-br/microsoft-365/excel/data-analysis)
 
-## Níveis de complexidade na estruturação de dados JSON
-### Exemplo de uma matriz aninhada (nested array):
+# Níveis de complexidade na estruturação de dados JSON
+## Exemplo de uma matriz aninhada (nested array):
 ``` json
 {
   "nome": "Felipe",
@@ -56,7 +56,7 @@ Flexíveis em estrutura, usados para dados distribuídos e de grande escala. Ex.
 ```
 Neste exemplo, a chave `notas` possui uma matriz que contém outras matrizes dentro.
 
-### Exemplo de um objeto aninhado (nested object):
+## Exemplo de um objeto aninhado (nested object):
 ``` json
 {
   "nome": "Felipe",
@@ -72,7 +72,7 @@ Neste exemplo, a chave `notas` possui uma matriz que contém outras matrizes den
 ```
 Neste caso, o objeto `endereco` contém outro objeto dentro dele (o objeto `cidade`).
 
-### Exemplo de um objeto raiz (root object):
+## Exemplo de um objeto raiz (root object):
 ``` json
 {
   "id": 1,
@@ -82,7 +82,7 @@ Neste caso, o objeto `endereco` contém outro objeto dentro dele (o objeto `cida
 ```
 Aqui, o objeto representado no nível mais alto é o objeto raiz, que contém pares chave-valor diretamente sem aninhamento.
 
-## Diferença entre Schema Estrela e Floco de neve (star e snowflake)
+# Diferença entre Schema Estrela e Floco de neve (star e snowflake)
 
 | Característica          | Esquema Estrela            | Esquema Floco de Neve      |
 |-------------------------|----------------------------|----------------------------|
@@ -91,14 +91,23 @@ Aqui, o objeto representado no nível mais alto é o objeto raiz, que contém pa
 | Desempenho de consulta  | Geralmente mais rápido      | Geralmente mais lento       |
 | Redundância de dados    | Mais redundante             | Menos redundante            |
 
-## Tipos de instrução SQL
+# Tipos de instrução SQL
 <img src="https://arquivo.devmedia.com.br/artigos/destaques/guia/SQL.png" alt="Texto Alternativo" width="500"/>
 
-## Dados transacionais
+## Outras
+  - **SELECT - INTO** faz uma inserção
+em uma tabela.
+  - **SELECT - OVER** determina o particionamento e a ordenação do conjunto de linhas antes que uma função de janela seja aplicada
+  - **INSERT - VALUES** insere valores em uma única linha.
+  - **SELECT - HAVING** filtra dados.
+  - **MERGE**: permite combinar dados de duas tabelas com base em uma condição específica, realizando operações de inserção, atualização ou exclusão em uma única instrução.
+[Ver mais](https://learn.microsoft.com/pt-br/sql/t-sql/queries/select-into-clause-transact-sql?view=sql-server-ver16)
+
+# Dados transacionais
 Um sistema transacional registra transações que encapsulam eventos específicos que a organização deseja controlar. Uma transação pode ser financeira, como a movimentação de dinheiro entre contas em um sistema bancário, ou pode fazer parte de um sistema de varejo, controlando pagamentos de bens e serviços de clientes. Pense na transação como uma unidade de trabalho pequena e discreta.
 Os bancos de dados transacionais são altamente normalizados e são otimizados para operações CRUD.
 
-## Dados analíticos
+# Dados analíticos
 O processamento de dados analíticos normalmente usa sistemas somente leitura (ou read-mostly) que armazenam grandes volumes de dados históricos ou métricas de negócios.
 As cargas de trabalho de dados analíticos são altamente desnormalizadas e otimizadas para operações de leitura.
 
@@ -133,15 +142,6 @@ A criação de um índice permite que você pesquise dados em uma tabela com mai
 
 # Blobs
 - **Blobs**: São objetos de armazenamento no Azure Blob Storage usados para armazenar grandes quantidades de dados não estruturados, como imagens, vídeos, documentos e backups. Os **blobs de páginas** são otimizados para acesso aleatório e usados para VHDs [Ver mais](https://learn.microsoft.com/pt-br/training/modules/explore-provision-deploy-non-relational-data-services-azure/2-azure-blob-storage)
-
-# Algumas Instruções SQL
-  - **SELECT - INTO** faz uma inserção
-em uma tabela.
-  - **SELECT - OVER** determina o particionamento e a ordenação do conjunto de linhas antes que uma função de janela seja aplicada
-  - **INSERT - VALUES** insere valores em uma única linha.
-  - **SELECT - HAVING** filtra dados.
-  - **MERGE**: permite combinar dados de duas tabelas com base em uma condição específica, realizando operações de inserção, atualização ou exclusão em uma única instrução.
-[Ver mais](https://learn.microsoft.com/pt-br/sql/t-sql/queries/select-into-clause-transact-sql?view=sql-server-ver16)
 
 # Apache Gremlin
 Linguagem de consulta usada para trabalhar com bancos de dados de grafos. Ele permite consultas complexas em estruturas de dados de grafos, que são compostas de vértices e arestas.
@@ -239,12 +239,12 @@ Uma instância hospedada do SQL Server com manutenção automatizada, que permit
 Em ambientes como Apache Spark e SQL, o conceito de *pool* também se aplica de maneira específica para gerenciar e otimizar o uso de recursos computacionais.
 Pool elástico: recurso que permite a gestão de múltiplos bancos de dados individuais de forma conjunta.
 
-### **Apache Spark: Pool de Recursos (Resource Pools)**
+## **Apache Spark: Pool de Recursos (Resource Pools)**
 No Apache Spark, um *pool* de recursos é utilizado para gerenciar como os recursos (CPU, memória) são distribuídos entre diferentes tarefas ou jobs. Isso é particularmente útil em ambientes com múltiplos usuários ou aplicativos que compartilham o mesmo cluster.
 
 - **Exemplo de uso**: Se você tiver dois aplicativos rodando simultaneamente em um cluster Spark, pode criar dois *pools* de recursos para garantir que ambos recebam uma parte justa dos recursos do cluster. Um *pool* pode ser configurado para alocar, por exemplo, 60% dos recursos para uma tarefa mais importante e 40% para uma menos crítica.
 
-### **SQL: Pool de Conexões (Connection Pool)**
+## **SQL: Pool de Conexões (Connection Pool)**
 Em SQL, especialmente em sistemas de bancos de dados, um *pool de conexões* é um conjunto de conexões ao banco de dados que são mantidas ativas para reutilização. Isso melhora o desempenho das aplicações, pois evita o custo associado a criar e destruir conexões para cada interação com o banco de dados.
 
 - **Exemplo de uso**: Suponha que você tenha uma aplicação web que realiza várias consultas ao banco de dados. Em vez de abrir e fechar uma nova conexão a cada consulta, a aplicação utiliza o *pool de conexões* para pegar uma conexão já existente, executar a consulta e depois devolver a conexão ao *pool* para ser reutilizada.
