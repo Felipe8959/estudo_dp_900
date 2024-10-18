@@ -91,6 +91,9 @@ Aqui, o objeto representado no nível mais alto é o objeto raiz, que contém pa
 | Desempenho de consulta  | Geralmente mais rápido      | Geralmente mais lento       |
 | Redundância de dados    | Mais redundante             | Menos redundante            |
 
+## Tipos de instrução SQL
+![Instruções SQL](https://arquivo.devmedia.com.br/artigos/destaques/guia/SQL.png)
+
 ## Dados transacionais
 Um sistema transacional registra transações que encapsulam eventos específicos que a organização deseja controlar. Uma transação pode ser financeira, como a movimentação de dinheiro entre contas em um sistema bancário, ou pode fazer parte de um sistema de varejo, controlando pagamentos de bens e serviços de clientes. Pense na transação como uma unidade de trabalho pequena e discreta.
 Os bancos de dados transacionais são altamente normalizados e são otimizados para operações CRUD.
